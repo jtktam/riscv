@@ -48,3 +48,14 @@ Create a Ubuntu Desktop VM with the at least 2 CPU Cores, 4GB of RAM and 32GB of
 
 - sudo make linux -j$(nproc)
 
+### Build qemu
+
+- sudo apt-get install pkg-config libglib2.0-dev libpixman-1-dev
+
+- cd \~/projects/riscv-gnu-toolchain/qemu/
+
+- ./configure --prefix=/opt/riscv --target-list=riscv64-softmmu,riscv32-softmmu,riscv64-linux-user,riscv32-linux-user
+
+- sudo make -j$(nproc)
+
+- sudo make install
