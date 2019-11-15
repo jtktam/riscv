@@ -129,6 +129,9 @@ bcm2835gpio_peripheral_base 0x20000000
 # Clock scaling
 bcm2835gpio_speed_coeffs 113714 28
 
+# POWER              5V GND
+# Header pin numbers 2  6
+
 # SWD                swclk swdio
 # Header pin numbers 22    18
 bcm2835gpio_swd_nums 25    24
@@ -157,6 +160,9 @@ bcm2835gpio_peripheral_base 0x3F000000
 # Clock scaling
 bcm2835gpio_speed_coeffs 146203 36
 
+# POWER              5V GND
+# Header pin numbers 2  6
+
 # SWD                swclk swdio
 # Header pin numbers 22    18
 bcm2835gpio_swd_nums 25    24
@@ -184,6 +190,9 @@ bcm2835gpio_peripheral_base 0x3F000000
 
 # Clock scaling
 bcm2835gpio_speed_coeffs 194938 48
+
+# POWER              5V GND
+# Header pin numbers 2  6
 
 # SWD                swclk swdio
 # Header pin numbers 22    18
