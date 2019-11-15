@@ -108,10 +108,10 @@ I only got it working with https://www.raspberrypi.org/downloads/raspbian/
 
 - cd lofive_openocd
 
-- create the config files below (rpi1.cfg, rpi2.cfg, rpi3.cfg, openocd.cfg)
+- create the config files below (rpi1.cfg, rpi2.cfg, rpi3.cfg, lofive.cfg, lofive_rpi3.cfg)
 
 - run openOCD like
-    - sudo /opt/riscv/openocd -f hifive1_rpi3.cfg
+    - sudo /opt/riscv/openocd -f lofive_rpi3.cfg
 
 ## openOCD sample config files
 
@@ -208,7 +208,7 @@ bcm2835gpio_trst_num  17
 reset_config trst_only
 ```
 
-### hifive1.cfg
+### lofive.cfg
 
 ```
 set _CHIPNAME riscv
@@ -233,7 +233,7 @@ if {[ info exists pulse_srst]} {
 #flash protect 0 64 last off
 ```
 
-### hifive1_rpi3.cfg 
+### lofive_rpi3.cfg 
 
 if you using a different pi, replace the first line below
 
@@ -244,7 +244,7 @@ transport select jtag
 
 adapter_khz 1000
 
-source hifive1.cfg
+source lofive.cfg
 
 ```
 
