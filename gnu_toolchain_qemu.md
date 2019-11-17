@@ -36,7 +36,7 @@ Create a Ubuntu Desktop VM with the at least 2 CPU Cores, 4GB of RAM and 32GB of
 
 - cd \~/projects/riscv-gnu-toolchain/
 
-- ./configure --prefix=/opt/riscv
+- ./configure --prefix=/opt/riscv --enable-multilib
 
 - make -j$(nproc)
 
